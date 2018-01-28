@@ -1,0 +1,43 @@
+<div class="container">
+ <!-- Route Title -->
+  <div class="row">
+    <div class="col">
+      <h2 class="route-title">{{route.routeName}}</h2>
+    </div>
+  </div>
+
+<!-- Route Details -->
+<div class="row">
+    <div class="col">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+              <th>FamilyId</th>
+              <th>Kosher</th>
+              <th>Number Attending</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+          </tr>
+        </thead>
+        <tbody>	
+          <tr *ngFor="let address of route.addresses">
+              <td>{{address.familyId}}</td>
+              <td>{{address.numberAttendingThanksgiving}}</td> 
+              <td>{{address.firstName}}</td>
+              <td>{{address.lastName}}</td>
+              <td>{{address.phone}}</td>
+              <td>{{address.address}}</td>
+              <td>{{address.city}}</td>
+              <td>{{address.state}}</td>
+              <td>{{address.zip}}</td>   
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>

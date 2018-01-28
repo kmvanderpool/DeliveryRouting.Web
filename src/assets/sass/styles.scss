@@ -1,0 +1,61 @@
+body {
+    h1.program-title {
+      color: #000000;
+      font-weight: bold;
+      font-size: 1.5rem;  
+    }
+
+    h2.route-title {
+        color: #808080;
+        font-size: 4.5rem;
+        font-weight: bold;
+    }
+
+    h2.final-instructions-title {
+        color: #000000;
+        font-size: 1.1rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    h2.guiding-message{
+        color: #000000;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    h3.keep-in-mind{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    ul.keep-in-mind {
+        li {
+            font-size: 1rem;
+        }
+    }
+
+    // .table-striped tbody tr:first-child{
+    //     font-style: italic;
+    // }
+}
+@media print {
+    body{
+        margin: 0; 
+        width: 1024px;
+       // -webkit-print-color-adjust: exact !important;
+    }
+
+    // .container{
+    //     padding: 0;
+    //     margin: 0;
+    // }
+
+    
+    // .table-striped tbody tr:nth-of-type(odd){
+    //     td{
+    //     background-color: rgba(0, 0, 0, 0.05) !important;
+    //     -webkit-print-color-adjust: exact !important;
+    // }
+//}
+
+}

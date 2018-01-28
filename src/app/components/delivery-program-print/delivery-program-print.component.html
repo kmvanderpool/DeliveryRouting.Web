@@ -1,0 +1,17 @@
+<div *ngIf="deliveryProgram">
+    
+      {{deliveryProgram.id}}
+      {{deliveryProgram.programName}} -->
+
+      <div *ngIf="deliveryProgram.routes">
+            <div *ngFor="let route of deliveryProgram.routes">
+                  <app-route-page [route]="route" ></app-route-page>
+            </div>
+      </div>
+
+      <!--<div *ngIf="deliveryProgram.routes">
+            <div *ngFor="let route of deliveryProgram.routes">
+                  <app-route-summary [route]="route" ></app-route-summary>
+            </div>
+      </div> -->
+</div>
